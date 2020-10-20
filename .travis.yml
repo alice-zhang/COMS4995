@@ -4,16 +4,15 @@ python: 3.7
 cache: pypi
 
 install:
-  - pip3 install coverage
+  - pip install flake8 codecov pytest pytest-cov
 
 script:
-  - python3 -m pytest -vvv my_proj/
-  - coverage run -m unittest discover
+  - python -m flake8 my_proj/
+  - python -m pytest -vvv my_proj/ --cov my_proj
+
+after_success:
+  - codecov
 
 branches:
   only:
   - master
-
-after_success:
-  - codecov
-  - bash <(curl -s https://codecov.io/bash)
