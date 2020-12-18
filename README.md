@@ -1,4 +1,4 @@
-#Mates
+# Mates
 
 ![GitHub](https://img.shields.io/github/license/alice-zhang/COMS4995)
 [![Build Status](https://travis-ci.org/alice-zhang/mates.svg?branch=master)](https://travis-ci.org/alice-zhang/mates)
