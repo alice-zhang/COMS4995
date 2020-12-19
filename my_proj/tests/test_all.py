@@ -1,16 +1,26 @@
 from my_proj import thank, complain, complete_task, assign_task, pay
 
+
 def test_thank():
-    assert thank() == True
+    assert thank()
+    return thank()
+
 
 def test_complain():
-    assert complain() == True
+    assert complain()
+    return complain()
+
 
 def test_complete_task():
-    assert complete_task() == True
+    assert complete_task()
+    return complete_task()
+
 
 def test_assign_task():
-    assert assign_task() == True
+    assert assign_task()
+    return assign_task()
+
 
 def test_pay():
-    assert pay() == True
+    assert pay()
+    return pay()
